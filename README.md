@@ -1,7 +1,5 @@
 ## hi, I'm Mr T. 👋
 
-## wanna know more?
-
 ```ts
 const mrT = {
   expertise: ["JavaScript", "React/Next.js", "Drizzle ORM/Prisma ORM"],
