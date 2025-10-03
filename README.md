@@ -1,4 +1,4 @@
-## Hi, I'm Mr T. 👋
+## Hi there 👋 I'm Mr T., the nerdy guy 
 
 ```ts
 // whoami.ts
