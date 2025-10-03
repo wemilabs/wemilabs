@@ -1,7 +1,7 @@
-## hi, I'm Mr T. 👋
+## Hi, I'm Mr T. 👋
 
 ```ts
-const mrT = {
+const mrTProfile = {
   expertise: ["JavaScript", "React/Next.js", "Drizzle ORM/Prisma ORM"],
   passion: ["Developer Education", "AI Accessibility", "Career Growth"],
   teaching: ["Programming Fundamentals", "AI Integration"],
@@ -9,4 +9,6 @@ const mrT = {
 }
 ```
 
-## keep in touch
+## Keep in touch
+- <a href="https://cuttypiedev.vercel.app" target="_blank">my website</a>
+- <a href="https://x.com/DorianTho5" target="_blank">X/Twitter</a>
