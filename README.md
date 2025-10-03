@@ -4,7 +4,7 @@
 // whoami.ts
 "use server";
 
-import { githubWebHelpers } from "github/web-helpers"; // 🥲 i couldn't resist
+import { githubWebHelpers } from "github/web/helpers"; // 🥲 i couldn't resist
 
 type ProfileProps = {
   expertise: string[];
