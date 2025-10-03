@@ -21,13 +21,13 @@ const mrTProfile: ProfileProps = {
 }
 
 /**
-Very nerdy presentation, I know 😎
-Let's just have fun, folks
+* Very nerdy presentation, I know 😎
+* Let's just have fun folks, while expressing a bit of creativity.
 */
 export async function displayProfile(mrTProfile){
-  const { success, session } = await verifySession();
+  const { success, session } = await githubWebHelpers.verifySession();
   if (!success || !session)
-    return { message: "Please sign in to access this page" };
+    return { message: "Please log in first to access this content." };
 
   try {
     const profileInfo = await githubWebHelpers.loadProfileInfo(mrTProfile);
