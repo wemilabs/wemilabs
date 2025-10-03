@@ -4,7 +4,7 @@
 // whoami.ts
 "use server";
 
-import { githubWebHelpers } from "github/web/helpers"; // 🥲 i couldn't resist
+import { githubWebDevsUtils } from "github/web/devs/utils"; // 🥲 i couldn't resist
 
 type ProfileProps = {
   expertise: string[];
@@ -25,12 +25,12 @@ const mrTProfile: ProfileProps = {
 * Let's just have fun folks, while expressing a bit of creativity.
 */
 export async function displayProfile(mrTProfile){
-  const { success, session } = await githubWebHelpers.verifySession();
+  const { success, session } = await githubWebDevsUtils.verifySession();
   if (!success || !session)
     return { message: "Please log in first to access this content." };
 
   try {
-    const profileInfo = await githubWebHelpers.loadProfileInfo(mrTProfile);
+    const profileInfo = await githubWebDevsUtils.loadProfileInfo(mrTProfile);
     return profileInfo;
   } catch(err: unknow) {
     const e = err as Error;
