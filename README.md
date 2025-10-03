@@ -1,7 +1,7 @@
 ## Hi, I'm Mr T. 👋
 
 ```ts
-// github-profile.ts
+// whoami.ts
 "use server";
 
 import { githubWebHelpers } from "github/web-helpers"; // 🥲 i couldn't resist
@@ -37,6 +37,10 @@ export async function displayProfile(mrTProfile){
     console.error(`Something wrong happened: ${e.message}`);
   }
 }
+
+// app/profile/page.tsx
+
+// Coming soon...
 ```
 
 ## Keep in touch
