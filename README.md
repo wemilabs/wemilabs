@@ -4,11 +4,7 @@
 // github-profile.ts
 "use server";
 
-/**
-Very nerdy presentation, I know 😎
-Let's just have fun, folks
-*/
-import { github } from "github/helpers"; // 🥲
+import { githubWebHelpers } from "github/web-helpers"; // 🥲 i couldn't resist
 
 type ProfileProps = {
   expertise: string[];
@@ -24,16 +20,20 @@ const mrTProfile: ProfileProps = {
   interest: ["AI/ML", "Astronomy/Space Engineering"]
 }
 
+/**
+Very nerdy presentation, I know 😎
+Let's just have fun, folks
+*/
 export async function displayProfile(mrTProfile){
   const { success, session } = await verifySession();
   if (!success || !session)
     return { message: "Please sign in to access this page" };
 
   try {
-    const profileInfo = await github.loadProfileInfo(mrTProfile);
+    const profileInfo = await githubWebHelpers.loadProfileInfo(mrTProfile);
     return profileInfo;
   } catch(err: unknow) {
-    const e = error as Error;
+    const e = err as Error;
     console.error(`Something wrong happened: ${e.message}`);
   }
 }
