@@ -1,16 +1,14 @@
-## Hi there 👋
+## hi, I'm Mr T. 👋
 
-<!--
-**wemilabs/wemilabs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## wanna know more?
 
-Here are some ideas to get you started:
+```ts
+const mrT = {
+  expertise: ["JavaScript", "React/Next.js", "Drizzle ORM/Prisma ORM"],
+  passion: ["Developer Education", "AI Accessibility", "Career Growth"],
+  teaching: ["Programming Fundamentals", "AI Integration"],
+  interest: ["AI/ML"]
+}
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## keep in touch
